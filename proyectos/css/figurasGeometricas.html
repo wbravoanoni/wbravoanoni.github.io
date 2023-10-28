@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    div{
+        display: block;
+        margin: 50px 0px;
+    }
+
+    #circulo{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+    }
+
+    #triangulo{
+        width: 0px;
+        height: 0px;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid green;
+    }
+
+    #trapecio{
+        height: 0;
+        width: 100px;
+        border-bottom: 100px solid green;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+    }
+    
+    #pentagono{
+        position: relative;
+        width: 54px;
+        border-width: 50px 18px 0;
+        border-style: solid;
+        border-color: green transparent;
+    }
+
+    #pentagono:before{
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -85px;
+        left: -18px;
+        border-width: 0 45px 35px;
+        border-style: solid;
+        border-color: transparent transparent green;
+    }
+
+    #hexagono{
+        width: 100px;
+        height: 55px;
+        background: green;
+        position: relative;
+    }
+
+    #hexagono::before{
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid green;
+    }
+
+    #hexagono::after{
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid green;
+    }
+
+</style>
+
+<body>
+
+    <div id="circulo"></div>
+    <div id="triangulo"></div>
+    <div id="trapecio"></div>
+    <div id="pentagono"></div>
+    <div id="hexagono"></div>
+
+</body>
+</html>

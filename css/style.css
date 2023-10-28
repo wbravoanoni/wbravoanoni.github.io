@@ -1,125 +1,187 @@
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-html,
-body {
+#navbar{
+  background-color: #111418!important;
   height: 100%;
-  background-color: #333;
-  margin-top: 24px;
 }
-body {
-  color: #fff;
+
+html, body {  
+ margin:0px;  
+ height:100% !important;    
+} 
+
+.navegacion a, .navegacion a:focus, .nombre, .social-icons a{
+  font-family: poppins;
+  color: white !important;
+  text-decoration: none !important;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+#foto-perfil{
+  margin: 0 auto;
+  width: 60%;
+}
+
+h1{
+  font-family: poppins;
+  font-size: 1.3125rem!important;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 2px 4px;
+}
+
+.social-icons.social-icons-sm li {
+  margin: 2px 4px;
+}
+
+#imagen-fondo{
+height: 100%;
+width: 100%;
+}
+
+.list-style-2>li {
+border-bottom: 1px solid #eaeaea;
+  list-style-type: none;
+  padding-bottom: 12px;
+  padding-top: 12px; 
+}
+
+.fw-600 {
+  font-weight: 600!important;
+}
+.me-2 {
+  margin-right: 0.5rem!important;
+}
+
+.img-experiencia{
+width: 180px;
+margin: 0 auto;
+}
+
+.caja-experiencia{
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  align-items: center;
 }
 
-.site-wrapper {
-  background-image: url("../img/muelle.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+.color-boton {
+background-color: #20c997!important;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 30px;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+#caja-resumen p{
+text-align: left;
+font-family: poppins;
 }
 
+.barra-fija{
+position: fixed;
+float: left;
+left: 0px;
+top: 0px;
+height: 100%;
+}
 
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
+.cuadro-izquierdo{
+position: absolute;
+left: 15.8em;
+}
+
+.contenedor-imagen{
+background-color: #111418!important;
+background-image: url('../img/muelle_dorado.jpg');
+opacity: 0.7;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+color: #fff;
+font-size: 25px;
+width: 100%;
+height: 100%;
+flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.titulo1{
+padding: 0px;
+margin: 0;
+font-weight: 600;
+font-family: poppins;
+font-size: 2rem !important;
+text-shadow: 10px 10px 20px #111418;
+}
+
+.titulo2{
+padding: 0px;
+margin: 0;
+font-weight: 600;
+font-family: poppins;
+font-size: 4rem !important;
+text-shadow: 10px 10px 20px #111418;
+}
+
+.titulo3{
+padding: 0px;
+margin: 0;
+font-weight: 600;
+font-family: poppins;
+font-size: 2rem !important;
+text-shadow: 10px 10px 20px #111418;
+}
+
+
+.bg-dark{
+background-color: #111418!important;
+}
+
+.carousel-indicators>button{
+  background-color: gray !important;
+}
+
+
+.color-hover:hover{
+color: #20c997 !important;
+transition: all .2s ease;
+}
+
+.btn-download{
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+
+@media (min-width: 2000px) {
+  .cuadro-izquierdo {
+    position: absolute;
+    left: 34.8em;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .cuadro-izquierdo{
+    position: absolute;
+    left: 0em;
+    width: 100% !important;
   }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    padding-top: 100px;
-    vertical-align: middle;
+
+  #navbar{
+    display: none;
   }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
-
-#imagenPerfil{  
-width: 200px;
-height: 200px;
-border-radius: 50%;
-background: trasparent;
-align-content: center;
-margin:0 auto;
-}
-
-.imgRedes{ 
-margin: 20px; 
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background: trasparent;
-align-content: center;
-}
-
-.recursos{
-padding-top: 100px;
-}
-
-#redesSociales{
-padding: 60px 0 60px 0;
-}
-
-#redesSociales a{
-padding-left: 40px;
-}
-
-#tituloCursos{
-  padding-bottom: 70px;
-}
-.presentacion{
-  font-size: 23px;
 }
