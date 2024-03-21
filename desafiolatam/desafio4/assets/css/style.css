@@ -45,5 +45,13 @@ footer img{
 }
 
 .navbar-collapse{
-    flex-grow: 0;
+    justify-content: right;
+}
+
+@media (max-width: 767px) {
+    #button-burger{
+        display: flex;
+        position: absolute;
+        right:  1rem;
+    }
 }
