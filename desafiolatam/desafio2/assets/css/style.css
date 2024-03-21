@@ -1,0 +1,76 @@
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color:white;
+}
+
+#banner{
+    background-image: url("https://www.thelanabox.com/wp-content/uploads/2022/05/tipos-de-lana-1.jpg");
+    background-color: #cccccc; 
+    height: 140px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#banner h1{
+    padding-top: 26px;
+}
+
+#banner span{
+    /*color:black ;*/
+    font-weight:bold;
+}
+
+body{
+    background-image: url('assets/imgs/lanas.jpg');
+}
+
+#main{
+    padding: 0 160px;
+}
+
+.images_products{
+    height:  250px;
+    width: 375px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    float: left;
+    padding-right: 60px;
+}
+
+.right{
+    float: right;
+}
+
+
+#products{
+    padding-top: 20px;
+}
+
+#footer{
+    background-color:#c68854 ;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.text-shadow-black{
+    text-shadow: black 0 -2px;
+}
+
+.text-shadow-white{
+    text-shadow: white 0 -2px;
+}
