@@ -1,0 +1,57 @@
+.img-logo{
+    width: 30%;
+}
+
+#navbar{
+    background-color:#28a745 !important;
+}
+
+.precio-antiguo{
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.precio-nuevo{
+    color: #28a745;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+}
+.subtitulo{
+    font-size: 13px;
+}
+
+footer{
+    display: grid;
+    text-align: center;
+}
+
+footer img{
+    font-size: 21px;
+    text-align: center;
+}
+
+.formulario{
+    background-color:#28a745;
+}
+
+.marca{
+ color: #707070;
+ font-size: 16px;
+}
+
+.navbar-collapse{
+    justify-content: right;
+}
+
+@media (max-width: 767px) {
+    #button-burger{
+        display: flex;
+        position: absolute;
+        right:  1rem;
+    }
+}
