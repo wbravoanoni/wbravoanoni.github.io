@@ -1,0 +1,52 @@
+body{
+  background-color: #f5f5f5;
+}
+
+.image-top {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .list-style-2 {
+    padding: 0;
+  }
+
+  .list-style-2>li {
+    border-bottom: 1px solid #eaeaea;
+    list-style-type: none;
+    padding: 12px 0 12px 0 ;
+  }
+
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .titulo1 {
+    padding: 0px;
+    margin: 0;
+    font-weight: 600;
+    font-family: poppins;
+    font-size: 2rem !important;
+    text-shadow: 10px 10px 20px #111418;
+  }
+
+  .titulo2 {
+    padding: 0px;
+    margin: 0;
+    font-weight: 600;
+    font-family: poppins;
+    font-size: 4rem !important;
+    text-shadow: 10px 10px 20px #111418;
+  }
+
+  .titulo3 {
+    padding: 0px;
+    margin: 0;
+    font-weight: 600;
+    font-family: poppins;
+    font-size: 2rem !important;
+    text-shadow: 10px 10px 20px #111418;
+  }
