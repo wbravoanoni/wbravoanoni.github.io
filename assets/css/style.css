@@ -50,3 +50,10 @@ body{
     font-size: 2rem !important;
     text-shadow: 10px 10px 20px #111418;
   }
+
+  a:hover{
+    color:goldenrod !important;
+  }
+  h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover{
+    color:goldenrod !important;
+  }
