@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        padding-top: 150px;
+    }
+    .elemento1:hover{
+        transform: translate(0,-100px);
+       transition: 3s all;
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background: #009cde;
+    }
+
+    ul li{
+        width: 100%;
+        font-size: 30px;
+        padding: 20px;
+        border-right: 2px solid #fff;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    ul li:hover{
+        transition: 1s all;
+        transform: translate(0,-8px);
+    }
+
+    .skew:hover{
+        transform: skewY(-5deg);
+    }
+
+    .scale{
+        transition: 2s all;
+    }
+    .scale:hover{
+        transform: scale(1,1.8);
+    }
+    .rotate{
+        transition: 3s all;
+   
+    }
+    .rotate:hover{
+        position: absolute;
+        transform: rotate(-360deg);
+        transform-origin: right;
+    }
+    .hola{
+        position: relative;
+        
+    }
+</style>
+<body>
+
+    <h1 class="elemento1">Elemento 1</h1>
+
+    <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+        <li>menu 4</li>
+        <li>menu 5</li>
+    </ul>
+
+    <h1 class="skew">Elemento skew</h1>
+
+    <h1 class="scale">Elemento scale</h1>
+
+    <div class="hola">
+        <h1 class="rotate">Elemento Rotate</h1>
+    </div>
+
+    
+</body>
+</html>

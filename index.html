@@ -3,315 +3,489 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Winston Bravo</title>
-    <link rel="icon" href="./assets/img/if_web_code.ico">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="img/if_web_code.ico">
+    <title>Presentación</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="./css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="./css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
+  <body>
+    <div id="home" class="container-fluid h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col-2 p-0 barra-fija">
+          <div id="navbar">
+            <div class="d-flex container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
+              <a class="nombre mb-lg-auto mt-lg-4 pb-5" href="">
+              <span class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
+                <img id="foto-perfil" class="img-fluid rounded-pill d-block" src="./img/img_perfil.jpg" title="Winston Bravo" alt="profile">
+              </span>
+              <h1 class="text-5 text-white text-center mb-5 d-lg-block color-hover">Winston Bravo</h1>
+            </a>
 
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="/">
-              <img src="./imgs/img1.jpg" alt="" height="30">
-          </a>
-          <!--Burger start-->
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--Burger start-->
-
-          <div class="collapse navbar-collapse" id="mi-menu">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#scrollspyHeading1">Home</a>
-                  </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link" href="#scrollspyHeading2">Acerca de mí</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading5">Educacion y Experiencia</a>
-                </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link" href="#scrollspyHeading3">Proyectos</a>
-                  </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link" href="#scrollspyHeading4">Contactame</a>
-                  </li>
-
-                  
+              <ul class="navegacion navbar-nav text-lg-center py-lg-5">
+                <li class="nav-item"><a href="#home" class="nav-link color-hover activo">Home</a></li>
+                <li class="nav-item"><a href="#about_me" class="nav-link color-hover">Conóceme</a></li>
+                <li class="nav-item"><a href="#experiencia" class="nav-link color-hover">Experiencia</a></li>
+                <li class="nav-item"><a href="#trabajos" class="nav-link color-hover">Proyectos Profesionales</a></li>
+                <li class="nav-item"><a href="#trabajos_personales" class="nav-link color-hover">Proyectos Personales</a></li>
               </ul>
+
+                <ul class="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex justify-content-center">
+                  <li class="social-icons-twitter">
+                    <a  class="color-hover" href="https://www.linkedin.com/in/winston-bravo/" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    </li>
+                    <li class="social-icons-dribbble">
+                      <a class="color-hover" href = "mailto: wbravoanoni@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-regular fa-envelope"></i>
+                      </a>
+                    </li>
+                    <li class="social-icons-github">
+                      <a  class="color-hover" href="https://wbravoanoni.github.io/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                </ul>
           </div>
+          </div>
+        </div>
+        <div class="col-10 h-100 px-0 cuadro-izquierdo d-flex">
+          <div class="contenedor-imagen justify-content-center">
+            <p class="titulo1">Bienvenido</p>
+            <h1 class="titulo2">Soy Winston Bravo</h1>
+            <p class="titulo3">Desarrollador Web</p>
+          </div>
+        </div>
       </div>
-    </nav>
-
-    <div class="container-flud">
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-          <section id="home">
-            <div id="slider-ejemplo" class="carousel slide" data-bs-ride="carousel">
-              
-              <div class="carousel-indicators">
-                  <button class="active" data-bs-target="#slider-ejemplo" data-bs-slide-to="0"></button>
-                  <button data-bs-target="#slider-ejemplo" data-bs-slide-to="1"></button>
-                  <button data-bs-target="#slider-ejemplo" data-bs-slide-to="2"></button>
-              </div>
-  
-              <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="5000">
-                      <img class="d-block w-100" src="https://picsum.photos/id/532/1900/800" alt="">
-  
-                      <div class="carousel-caption d-none d-md-block">
-                        <p class="titulo1">Bienvenido</p>
-                        <h2 class="h1 titulo2">Soy Winston Bravo</h2>
-                        <p class="titulo3">Desarrollador Web</p>
-                      </div>
-  
-                  </div>
-  
-                  <div class="carousel-item" data-bs-interval="5000">
-                      <img class="d-block w-100" src="https://picsum.photos/id/8/1900/800" alt="">
-  
-                      <div class="carousel-caption d-none d-md-block">
-                        <p class="titulo1">Bienvenido</p>
-                        <h2 class="h1 titulo2">Soy Winston Bravo</h2>
-                        <p class="titulo3">Desarrollador Web</p>
-                    </div>
-                  </div>
-  
-                  <div class="carousel-item" data-bs-interval="5000">
-                      <img class="d-block w-100" src="https://picsum.photos/id/12/1900/800" alt="">
-  
-                      <div class="carousel-caption d-none d-md-block">
-                        <p class="titulo1">Bienvenido</p>
-                        <h2 class="h1 titulo2">Soy Winston Bravo</h2>
-                        <p class="titulo3">Desarrollador Web</p>
-                    </div>
-                  </div>
-  
-              </div>
-  
-              <button class="carousel-control-prev" data-bs-target="#slider-ejemplo" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-              </button>
-  
-              <button class="carousel-control-next" data-bs-target="#slider-ejemplo" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-              </button>
-          </div>
-          </section>
-
-          <section id="conoceme" class="row">
-            <h4 id="scrollspyHeading2" class="display-1 text-center py-5">Acerca de mí</h4>
-            <div class="col-6 d-flex justify-content-center">
-              <img class="img-fluid rounded h-75" src="./assets/img/img_perfil.jpg" alt="">
+      <div class="pt-5 row d-flex">
+        <div class="col-2 h-100">
+          
+        </div>
+        <div class="col-10 h-100">
+          <div class="row py-2">
+            <div class="col-12">
+              <h2 id="about_me" class="text-center text-6 fw-600 mb-4">Conóceme</h2>
             </div>
-            <div class="col-6">
-              <p>Hola Soy Winston Bravo, desarrollador Web
-                Desarrollador web con una sólida experiencia en asesorar proyectos en diversos sectores, incluyendo gas, 
-                automoción, salud y más. Mi enfoque se centra en utilizar herramientas avanzadas de análisis de datos y 
-                desarrollo de aplicaciones web personalizadas para abordar los desafíos específicos de cada cliente. Además, 
-                mi historial incluye liderar equipos en metodologías Scrum y gestionar eficazmente la implementación de 
-                soluciones tecnológicas. Mi pasión por la tecnología y mi capacidad para comunicar ideas complejas de manera 
+            <div class="col-sm-12 col-lg-6 col-xl-6 px-5 text-justify">
+              <h1>Hola Soy Winston Bravo, desarrollador Web</h1>
+              <p>Desarrollador web con una sólida experiencia en asesorar proyectos en diversos sectores,
+                incluyendo gas, automoción, salud y más. Mi enfoque se centra en utilizar herramientas
+                avanzadas de análisis de datos y desarrollo de aplicaciones web personalizadas para abordar
+                los desafíos específicos de cada cliente. Además, mi historial incluye liderar equipos en
+                metodologías Scrum y gestionar eficazmente la implementación de soluciones tecnológicas.
+                Mi pasión por la tecnología y mi capacidad para comunicar ideas complejas de manera
                 clara me han permitido brindar soluciones efectivas.</p>
 
-                  <ul class="list-style-2 ">
-                    <li><span class="fw-600 me-2">Nombre:</span>Winston Bravo</li>
-                    <li><span class="fw-600 me-2">Correo:</span>wbravoanoni@gmail.com</li>
-                    <li><span class="fw-600 me-2">Edad:</span>32</li>
-                    <li><span class="fw-600 me-2">De:</span>Santiago, Chile</li>
-                  </ul>
-                  <a class="btn-download btn btn-outline-primary rounded-pill shadow-none" href="./assets/cv/CV_Winston_Bravo_2024.pdf" download="">Descargar CV<span class="ms-1">
-                    <i class="fas fa-download"></i></span>
-                  </a>
             </div>
-          </section>
-
-          <section id="educacion_experiencia" class="bg-body-secondary pt-3 pb-3">
-            <h4 id="scrollspyHeading5" class="display-1 text-center py-5">EDUCACIÓN Y EXPERIENCIA</h4>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card mb-5 border-light rounded p-4 shadow" style="width: auto;">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                      <svg width="34px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
-                                      </svg>
-                                      <h6 class="card-title">2024</h6>
-                                      <h4 class="card-subtitle mb-2 fw-semibold">Desafío Latam</h4>
-                                      <h5 class="card-text">Desarrollo Full stack javascript</h5>
-                                    </li>
-
-                                    <li class="list-group-item">
-                                      <svg class="pb-3" width="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                                        <path d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H256V416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"/>
-                                      </svg>
-                                      <h6 class="card-title">2024</h6>
-                                      <h4 class="card-subtitle mb-2 fw-semibold">Universidad Catolica de Chile</h4>
-                                      <h5 class="card-text">Diplomado data science</h5>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <svg class="pb-3" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
-                                      </svg>
-                                      <h6 class="card-title">2010-20215</h6>
-                                      <h4 class="card-subtitle mb-2 fw-semibold">Universidad San Sebastián</h4>
-                                      <h5 class="card-text">Ingeniero Civil en informática</h5>
-                                    </li>
-                                </ul>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card mb-5 border-light rounded p-4 shadow" style="width: auto;">
-                            <div class="card-body">
-                              <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">
-                                    <svg class="pb-3" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                      <path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/>
-                                    </svg>
-                                    <h6 class="card-title">2019 - 2023</h6>
-                                    <h4 class="card-subtitle mb-2 fw-semibold">Cybertrust</h4>
-                                    <h5 class="card-text">Consultor Digital & Analitics</h5>
-                                  </li>
-                                  <li class="list-group-item">
-                                    <svg class="pb-3" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                      <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
-                                    </svg>
-                                    <h6 class="card-title">2015 - 2019</h6>
-                                    <h4 class="card-subtitle mb-2 fw-semibold">TGA</h4>
-                                    <h5 class="card-text">Asistente de Operaciones</h5>
-                                  </li>
-                                  <li class="list-group-item">
-                                    <svg class="pb-3" width="26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                      <path d="M180.5 141.5C219.7 108.5 272.6 80 336 80s116.3 28.5 155.5 61.5c39.1 33 66.9 72.4 81 99.8c4.7 9.2 4.7 20.1 0 29.3c-14.1 27.4-41.9 66.8-81 99.8C452.3 403.5 399.4 432 336 432s-116.3-28.5-155.5-61.5c-16.2-13.7-30.5-28.5-42.7-43.1L48.1 379.6c-12.5 7.3-28.4 5.3-38.7-4.9S-3 348.7 4.2 336.1L50 256 4.2 175.9c-7.2-12.6-5-28.4 5.3-38.6s26.1-12.2 38.7-4.9l89.7 52.3c12.2-14.6 26.5-29.4 42.7-43.1zM448 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/>
-                                    </svg>
-                                    <h6 class="card-title">2018 - 2019</h6>
-                                    <h4 class="card-subtitle mb-2 fw-semibold">Cermaq</h4>
-                                    <h5 class="card-text">Encargado de Soporte Técnico</h5>
-                                  </li>
-                              </ul>            
-                           </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-12 col-lg-4 col-xl-4">
+              <ul class="list-style-2 ">
+                <li><span class="fw-600 me-2">Nombre:</span>Winston Bravo</li>
+                <li><span class="fw-600 me-2">Correo:</span>wbravoanoni@gmail.com</li>
+                <li><span class="fw-600 me-2">Edad:</span>31</li>
+                <li><span class="fw-600 me-2">De:</span>Santiago, Chile</li>
+              </ul>
+              <a class="btn-download btn btn-outline-primary rounded-pill shadow-none" href="cv/CV_Winston_Bravo_Anoni.pdf" download="">Descargar CV<span class="ms-1">
+                <i class="fas fa-download"></i></span>
+              </a>
             </div>
-          </section>
-          
-          <section id="proyectos" class="my-5 p-5">
-            <h4 id="scrollspyHeading3" class="display-1 text-center">Proyectos</h4>
-      
-              <div class="row">
-                  <div class="col-12 col-sm-4 py-2">
-                      <div class="card">
-                          <div class="image-top" style="background-image: url(./assets/img/card-1.jpg)"></div>
-                          <div class="card-body">
-                              <h5 class="card-title fw-bold">Lanas Y tejidos</h5>
-                              <p class="card-text">
-                                  Primera página del desafió creada con HTML, página de venta de  productos de una tienda de lanas
-                              </p>
-                              <a class="btn btn-outline-dark btn-lg rounded-5 d-block" href="https://wbravoanoni.github.io/desafiolatam/desafio2/" target="_blank">
-                                  Ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-sm-4 py-2">
-                      <div class="card">
-                          <div class="image-top" style="background-image: url(./assets/img/card-2.jpg)"></div>
-                          <div class="card-body">
-                              <h5 class="card-title fw-bold">Iguana page</h5>
-                              <p class="card-text">
-                                  Segunda página del desafió, creada con HTML y Flexbox, página con temática de iguanas
-                              </p>
-                              <a class="btn btn-outline-dark btn-lg rounded-5 d-block" href="https://wbravoanoni.github.io/desafiolatam/desafio3/" target="_blank">
-                                  Ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-sm-4 py-2">
-                      <div class="card">
-                          <div class="image-top" style="background-image: url(./assets/img/card-3.jpg)"></div>
-                          <div class="card-body">
-                              <h5 class="card-title fw-bold">Cupones</h5>
-                              <p class="card-text">
-                                  Tercera página del desafió, página creada con Html - Css y Bootstrap, página de temática de cupones
-                              </p>
-                              <a class="btn btn-outline-dark btn-lg rounded-5 d-block" href="https://wbravoanoni.github.io/desafiolatam/desafio4/" target="_blank">
-                                  Ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
+          </div>
 
-                  <div class="col-12 col-sm-4 py-2">
-                    <div class="card">
-                        <div class="image-top" style="background-image: url(./assets/img/card-4.jpg)"></div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Página de experiencias</h5>
-                            <p class="card-text">
-                              Cuarta página del desafió, página creada con Html - Css y Bootstrap, página de demostración de tecnologías
-                            </p>
-                            <a class="btn btn-outline-dark btn-lg rounded-5 d-block" href="https://wbravoanoni.github.io/desafiolatam/desafio5/" target="_blank">
-                                Ver más
-                            </a>
-                        </div>
-                    </div>
+          <div id="experiencia" class="row py-5 caja-experiencia">
+            <div class="col-12">
+              <h2 class="text-6 fw-600 mt-4 mb-4 ">Experiencia</h2>
+            </div>
+
+            <div class="row gx-5">
+              <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">HTML/CSS <span class="float-end">70%</span></p>
+                <div class="progress progress-sm mb-4 ">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  </div>
                 </div>
               </div>
-          </section>
 
-          <section id="Contactame" class="bg-body-secondary px-5">
-            <h4 id="scrollspyHeading4" class="text-center display-1 py-5">Contáctame</h4>      
-              <p class="text-center my-4 d-none d-md-block">
-                  Es un placer tenerte aquí. Si necesitas alguna ayuda, tienes alguna pregunta o simplemente quieres ponerte en contacto conmigo,
-                  estás en el lugar adecuado. Por favor, tómate un momento para completar el siguiente formulario con los detalles necesarios.
-                  Tu opinión es invaluable para mí y me ayuda a mejorar constantemente.
-                  ¡Gracias por confiar en mí! Estoy ansioso por saber de ti.</p>
-              <form class="row">
-      
-      
-                  <div class="form-group mb-4 col-6">
-                      <label class="mb-2">Nombre</label>
-                      <input class="form-control" placeholder="Nombre">
+              <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">JavaScript <span class="float-end">70%</span></p>
+                <div class="progress progress-sm mb-4 ">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                   </div>
-      
-                  <div class="form-group mb-4 col-6">
-                      <label class="mb-2">Correo electrónico</label>
-                      <input class="form-control" placeholder="Correo electrónico" />
-                  </div>
-      
-      
-                  <div class="form-group">
-                      <label class="mb-2">Mensaje</label>
-                      <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
-                  </div>
-      
-                  <div class="my-3 text-end">
-                      <button class="btn btn-success text-light">Enviar</button>
-                  </div>
-              </form>
-          </section>
+                </div>
+              </div>
+
+              <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">Python <span class="float-end">70%</span></p>
+                <div class="progress progress-sm mb-4 ">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                </div>
+              </div>
+
+            <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">PHP <span class="float-end">70%</span></p>
+              <div class="progress progress-sm mb-4 ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+              </div>
+            </div>
+            
+            <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">Bootstrap <span class="float-end">70%</span></p>
+              <div class="progress progress-sm mb-4 ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">Power BI <span class="float-end">60%</span></p>
+              <div class="progress progress-sm mb-4 ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">Git - Github/Gitlab <span class="float-end">70%</span></p>
+              <div class="progress progress-sm mb-4 ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6"><p class=" fw-500 text-start mb-2 text-dark">AWS Cloud Practitioner <span class="float-end">70%</span></p>
+              <div class="progress progress-sm mb-4 ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="trabajos" class="row">
+            <h2 class="text-6 fw-600 mb-4 text-center">Proyectos Profesionales</h2>
+            <div class="row gx-5">
+              <div class="col-md-6"><h2 class="text-6 fw-600 mb-4 ">
+              </h2>
+                <div class="bg-white  rounded p-4 mb-4 bg-white border">
+                  <p class="badge color-boton text-2 fw-400">2019 - 2023</p>
+                  <h3 class="text-5 ">Dashboard Monitoreo Continuo</h3>
+                  <p class="text-danger">Abastible - Solgas - Duragas</p>
+                  <button type="button" class="btn btn-dark mt-5" data-bs-toggle="modal" data-bs-target="#proyecto1">
+                    Ver Proyecto
+                  </button>
+                </div>
+                <div class="bg-white  rounded p-4 mb-4 bg-white border">
+                  <p class="badge color-boton text-2 fw-400">2019</p>
+                  <h3 class="text-5 ">Canal de denuncias</h3>
+                  <p class="text-danger">Nuestros Parques</p>
+                  <button type="button" class="btn btn-dark mt-5" data-bs-toggle="modal" data-bs-target="#proyecto3">
+                    Ver Proyecto
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h2 class="text-6 fw-600 mb-4 "></h2>
+                <div class="bg-white  rounded p-4 mb-4 bg-white border">
+                  <p class="badge color-boton text-2 fw-400">2022</p>
+                  <h3 class="text-5 ">Plataforma de carga de horas</h3>
+                  <p class="text-danger">Cybertrust</p>
+                  <button type="button" class="btn btn-dark mt-5" data-bs-toggle="modal" data-bs-target="#proyecto2">
+                    Ver Proyecto
+                  </button>
+                </div>
+                <div class="bg-white  rounded p-4 mb-4 bg-white border">
+                  <p class="badge color-boton text-2 fw-400">2022 - 2023</p>
+                  <h3 class="text-5 ">Plataforma de accidentes laborales</h3>
+                  <p class="text-danger">Cristalerias de Chile</p>
+                  <button type="button" class="btn btn-dark mt-5" data-bs-toggle="modal" data-bs-target="#proyecto4">
+                    Ver Proyecto
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="trabajos_personales" class="row">
+            <h2 class="text-6 fw-600 mb-4 text-center">Proyectos Personales</h2>
+            <div class="row gx-5">
+              <div class="col-md-6"><h2 class="text-6 fw-600 mb-4 ">
+              </h2>
+                <div class="bg-white  rounded p-4 mb-4 bg-white border">
+                  <p class="badge color-boton text-2 fw-400">2023</p>
+                  <h3 class="text-5 ">Tic tak toe</h3>
+                  <p class="mb-0 text-justify">Es una implementación digital del clásico juego de tres en línea, también conocido como "Xs y Os". Esta plataforma ofrece a los jugadores la oportunidad de disfrutar de partidas emocionantes y estratégicas en un tablero de 3x3. Es un juego sencillo de aprender y jugar, pero que ofrece diversión y desafíos a jugadores de todas las edades.</p>
+                  <a class="btn btn-dark mt-5" href="./proyectos/tictactoe/index.html" target="_blank">Ver Proyecto</a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h2 class="text-6 fw-600 mb-4 "></h2>
+                <div class="bg-white  rounded p-4 mb-4 bg-white border">
+                  <p class="badge color-boton text-2 fw-400">2023</p>
+                  <h3 class="text-5 ">Pokedex</h3>
+                  <p class="mb-0 text-justify"> Es una plataforma digital diseñada para los entusiastas y entrenadores de Pokémon que desean tener acceso a una enciclopedia completa y funcional de Pokémon. Esta aplicación proporciona información detallada sobre todas las especies de Pokémon conocidas, sus características, movimientos, estadísticas y evoluciones. Además, ofrece herramientas para seguir la colección personal de Pokémon y facilita la planificación estratégica para batallas y entrenamientos.</p>
+                  <a class="btn btn-dark mt-5" href="./proyectos/pokedex/index.html" target="_blank">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center my-5">
+            <a class="btn btn-outline-primary rounded-pill shadow-none" href="cv/CV_Winston_Bravo_Anoni.pdf" download="">Descargar CV<span class="ms-1">
+              <i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+    </div>
+
+
+    <!--Inicio Modales-->
+
+
+
+<!-- Modal 1 -->
+<div class="modal fade" id="proyecto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Dashboard Monitoreo Continuo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-6">
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/modal_proyectos/plataforma1_A.png" width="900" height="400" alt="Proyecto1_A" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/plataforma1_B.png" width="900" height="400" alt="Proyecto1_B" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/plataforma1_C.png" width="900" height="400" alt="Proyecto1_C" class="d-block w-100">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <h5 class="text-4 font-weight-600 text-start">Información del proyecto:</h5>
+          <p class="text-justify px-1"> Es una solución integral diseñada para proporcionar a las organizaciones una visión en tiempo real y un análisis detallado de sus operaciones y procesos clave. Este sistema de monitoreo avanzado ofrece una interfaz de usuario intuitiva y personalizable que permite a los usuarios supervisar y evaluar de manera eficiente diversas métricas y datos relevantes para la toma de decisiones en una amplia gama de sectores y aplicaciones.</p>
+
+          <h5 class="text-4 font-weight-600 mt-4 text-start">Project Details:</h5>
+          <p class="text-start"><b>Clientes:</b> Abastible - Solgas - Duragas</p>
+          <hr>
+          <p class="text-start"><b>Tecnologias: </b>HTML5, CSS3, PHP, Javascript</p>
+          <hr>
+          <p class="text-start"><b>Fecha:</b> Mayo, 2019</p>
+          <hr>
+        </div>
+       </div>
       </div>
     </div>
-    <footer class="py-5 text-center text-white bg-dark">
-      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="#">Winston Bravo</a>.</p>
-      <p class="mb-0">
-        <a href="#">Volver Arriba</a>
-      </p>
-    </footer>
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-  </body>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade bd-example-modal-xl" id="proyecto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Plataforma de carga de horas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-6">
+          <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/modal_proyectos/proyecto2_A.png" width="900" height="400" alt="Proyecto2_A" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto2_B.png" width="900" height="400" alt="Proyecto2_B" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto2_C.png" width="900" height="400" alt="Proyecto2_C" class="d-block w-100">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <h5 class="text-4 font-weight-600 text-start">Información del proyecto:</h5>
+          <p class="text-justify px-1"> Es una herramienta de gestión del tiempo y seguimiento de proyectos diseñada para optimizar la productividad y la administración de recursos en organizaciones de todos los tamaños. Este software permite a las empresas llevar un registro preciso del tiempo empleado en tareas y proyectos, lo que facilita la toma de decisiones informadas, la gestión eficiente de proyectos y la facturación precisa de los servicios prestados.es una solución integral diseñada para proporcionar a las organizaciones una visión en tiempo real y un análisis detallado de sus operaciones y procesos clave.</p>
+
+          <h5 class="text-4 font-weight-600 mt-4 text-start">Project Details:</h5>
+          <p class="text-start"><b>Clientes:</b> Cybertrust</p>
+          <hr>
+          <p class="text-start"><b>Tecnologias: </b>HTML5, CSS3, PHP, Javascript - Jquery</p>
+          <hr>
+          <p class="text-start"><b>Fecha:</b> Marzo, 2022</p>
+          <hr>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade bd-example-modal-xl" id="proyecto3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Canal de denuncias</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-6">
+          <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/modal_proyectos/proyecto3_A.png"  width="900" height="300" alt="Proyecto3_A" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto3_B.png"  width="900" height="300" alt="Proyecto3_B" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto3_C.png"   width="900" height="200" alt="Proyecto3_C" class="d-block w-100">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <h5 class="text-4 font-weight-600 text-start">Información del proyecto:</h5>
+          <p class="text-justify px-1"> Es una plataforma especializada diseñada para permitir a los empleados, clientes y partes interesadas informar de manera segura y confidencial conductas indebidas, prácticas éticas cuestionables o cualquier otro asunto relacionado con la integridad dentro de una organización. Esta solución ofrece a las empresas una herramienta esencial para fomentar la transparencia, la rendición de cuentas y el cumplimiento normativo. </p>
+
+          <h5 class="text-4 font-weight-600 mt-4 text-start">Project Details:</h5>
+          <p class="text-start"><b>Clientes:</b> Nuestros Parques</p>
+          <hr>
+          <p class="text-start"><b>Tecnologias: </b>HTML5, CSS3, PHP, Javascript - Jquery</p>
+          <hr>
+          <p class="text-start"><b>Fecha:</b> Mayo, 2019</p>
+          <hr>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 4 -->
+<div class="modal fade bd-example-modal-xl" id="proyecto4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Plataforma de accidentes laborales</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-6">
+          <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo4" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo4" data-bs-slide-to="4"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/modal_proyectos/proyecto4_A.png"  width="900" height="300" alt="Proyecto4_A" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto4_B.png"  width="900" height="300" alt="Proyecto4_B" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto4_C.png"  width="900" height="300" alt="Proyecto4_C" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto4_D.png"  width="900" height="300" alt="Proyecto4_D" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/modal_proyectos/proyecto4_E.png"  width="900" height="300" alt="Proyecto4_E" class="d-block w-100">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <h5 class="text-4 font-weight-600 text-start">Información del proyecto:</h5>
+          <p class="text-justify px-1"> Es una solución especializada diseñada para ayudar a las organizaciones a gestionar y abordar de manera eficaz los accidentes laborales y las lesiones en el lugar de trabajo. Esta plataforma proporciona un sistema integral para registrar, investigar, analizar y prevenir accidentes laborales, contribuyendo así a un entorno de trabajo más seguro y a la reducción de riesgos para los empleados.</p>
+
+          <h5 class="text-4 font-weight-600 mt-4 text-start">Project Details:</h5>
+          <p class="text-start"><b>Clientes:</b> Cristalerias de Chile</p>
+          <hr>
+          <p class="text-start"><b>Tecnologias: </b>HTML5, CSS3, PHP, Javascript</p>
+          <hr>
+          <p class="text-start"><b>Fecha:</b> Enero, 2022</p>
+          <hr>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 </html>
-
-
