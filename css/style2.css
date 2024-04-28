@@ -1,0 +1,185 @@
+:root {
+  /*--main-letter-color: #20c997;*/
+  --main-letter-color: #e38528;
+  --main-background-color: #222;
+  --main-background-principal:#fcf2e8;
+  --secondary-color:#111;
+  --secondary-color-soft:#666;
+}
+
+body{
+    background-color: var(--main-background-principal);
+}
+
+.max-altura {
+    height: 100vh;
+    position: fixed;
+  }
+
+.max-altura2 {
+    height: 100vh;
+    position: relative;
+    left: 25%;
+  }
+
+  .max-altura-notamanio {
+    position: relative;
+    left: 25%;
+  }
+
+
+  #barra-left{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222;
+  }
+
+.nombre-navegacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+#barra-left > p > span:nth-child(1){
+    color: var(--main-letter-color);
+    font-weight: bolder;
+}
+
+#barra-left > p > span:nth-child(2){
+    color: white;
+    font-weight: bolder;
+}
+
+.home-left{
+    width: 50%;
+}
+
+.home-right{
+    width: 50%;
+}
+
+.text-home-1{
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-letter-color);
+}
+
+.text-home-2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-home-3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.text-home-4{
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color-soft);
+}
+
+.text-home-2-span1{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif; 
+    color: var(--secondary-color);
+}
+
+.text-home-2-span2{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif; 
+    color: var(--main-letter-color);
+}
+
+.btn-home{
+    background-color: var(--main-letter-color) !important;
+    border-color: var(--main-letter-color) !important;
+}
+
+.btn-home:hover{
+    background-color: var(--main-background-color) !important;
+    border-color: var(--main-background-color) !important;
+}
+
+.titulo-about-me{
+    font-family: 'Roboto', sans-serif; 
+    color:var(--secondary-color);
+}
+
+.subtitulo-about-me{
+    font-family: 'Roboto', sans-serif; 
+    color:#666;
+}
+
+
+.about-me-img{
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+.about-text-1{
+    font-family: 'Roboto', sans-serif; 
+    color: var(--secondary-color);
+}
+
+.about-text-2{
+    font-family: 'Roboto', sans-serif; 
+    color: var(--main-letter-color);
+}
+
+.color-primary{
+    font-family: 'Roboto', sans-serif; 
+    color: var(--main-letter-color);
+}
+
+.color-secondary{
+    font-family: 'Roboto', sans-serif; 
+    color: var(--secondary-color);
+}
+
+.box{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    border-left: .2rem solid var(--main-letter-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pildora{
+    color: #fff;
+    font-size: 1rem;
+    background: var(--main-letter-color);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.my-experience-sub{
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color-soft);
+}
+
+.box-portfolio{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+.img-contact-me{
+    display: flex;
+    color: var(--main-letter-color);
+    width: 50px;
+    justify-content: center;
+}
+
+
+.contact .icons-container .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+}

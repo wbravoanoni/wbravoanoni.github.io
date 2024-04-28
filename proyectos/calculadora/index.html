@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<style>
+
+    body{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #calculadora{
+        background-color: black;
+        width: 500px;
+        height: 460px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 20px;
+    }
+
+    .box{
+        width: 100px;
+        height: 50px;
+        border:1px solid black;
+        display: inline;
+        background-color: #f5f5f5;
+    }
+
+    .box:hover{
+        background-color: goldenrod;
+    }
+
+    .col{
+        padding-bottom: 20px;
+    }
+
+    .pantalla{
+        width: 100%;
+        height: 40px;
+    }
+
+
+
+</style>
+<body>
+
+    <div id="calculadora">
+
+        <div class="botones">
+            <div class="col">
+                <input id="pantalla" class="pantalla" type="text" value="0">
+            </div>
+
+            <div class="col">
+                <button class="box">%</button>
+                <button id="div" class="box numero">/</button>
+                <button class="box">C</button>
+                <button id="borrar" class="box">Borrar</button>    
+            </div>
+
+            <div class="col">
+                <button class="box numero">7</button>
+                <button class="box numero">8</button>
+                <button class="box numero">9</button>
+                <button id="multi" class="box numero">x</button>    
+            </div>
+
+            <div class="col">
+                <button class="box numero">4</button>
+                <button class="box numero">5</button>
+                <button class="box numero">6</button>
+                <button id="resta" class="box numero">-</button>    
+            </div>
+            
+            <div class="col">
+                <button id="prueba" class="box numero">1</button>
+                <button class="box numero">2</button>
+                <button class="box numero">3</button>
+                <button id="suma" class="box numero">+</button>    
+            </div>
+
+            <div class="col">
+                <button class="box">+/-</button>
+                <button class="box numero">0</button>
+                <button class="box">,</button>
+                <button id="igual" class="box">=</button>  
+            </div>         
+        </div>
+    </div>
+    
+    <script>
+
+        let borrar = document.querySelector('#borrar');
+        borrar.addEventListener( 'click', () => limpiarPantalla());
+
+        let igual = document.querySelector('#igual');
+        igual.addEventListener( 'click', () => realizarOperacion('='));
+
+        let suma = document.querySelector('#suma');
+        suma.addEventListener( 'click', () => realizarOperacion('+'));
+
+        let resta = document.querySelector('#resta');
+        resta.addEventListener( 'click', () => realizarOperacion('-'));
+
+        let multi = document.querySelector('#multi');
+        multi.addEventListener( 'click', () => realizarOperacion('x'));
+
+        let div = document.querySelector('#div');
+        div.addEventListener( 'click', () => realizarOperacion('/'));
+
+        let numeros = document.querySelectorAll('.numero');
+        numeros.forEach(element => {
+            element.addEventListener( 'click', function(e){
+                presionarBoton();
+            });
+        });
+
+    
+
+        function presionarBoton(){
+            let pantalla     = document.querySelector('#pantalla');
+            let pantallaDividida = pantalla.value.split('');
+            let tamanio      = pantallaDividida.length;
+            let memoria      = pantalla.value;
+            let max_pantalla = 10;
+
+            if(tamanio < max_pantalla){
+                if(memoria != 0){   
+                    var boton = event.target.innerHTML;
+                    if(boton=== '+' || boton === '-' || boton === 'x' || boton === '/'){
+                        if( existeOperacion() ){
+                            busqueda = parseInt(pantallaDividida[tamanio-1]);
+
+                            if( typeof( busqueda ) == "number"){
+                                pantalla.value=memoria;
+                            }else{
+                                let t_memoria = memoria.length;
+                                let nuevaCadena = memoria.substring(0, t_memoria-1)
+                                pantalla.value=nuevaCadena+boton;
+                            }
+                        }else{
+                            pantalla.value=memoria+boton;
+                        }
+                      
+                    }else{
+                        pantalla.value=memoria+boton;
+                    }
+                }else{
+                    var boton = event.target.innerHTML;
+                    if(boton=== '+' || boton === '-' || boton === 'x' || boton === '/'){
+                        alert("No puede comenzar con una operacion");
+                    }else{
+                        pantalla.value = boton;
+                    }
+                }
+            }
+        }
+
+        function limpiarPantalla(){
+            let pantalla = document.querySelector('#pantalla');
+            pantalla.value='0';
+        }
+
+        function realizarOperacion(arg){
+            let pantalla = document.querySelector('#pantalla');
+            let valorPantalla = pantalla.value;
+            let resultado;
+            let operaciones = ['+','-','x','/','='];
+
+            if( operaciones.indexOf(arg) >  -1 ){
+
+                suma  = valorPantalla.indexOf('+');
+                resta = valorPantalla.indexOf('-');
+                multi = valorPantalla.indexOf('x');
+                div   = valorPantalla.indexOf('/');
+
+                if( suma>0 ){
+                    numeros = valorPantalla.split('+');
+                    numeros = numeros.filter(el => el != '');
+                    if(numeros.length ==2) {
+                        let num1 = parseInt( numeros[0] );
+                        let num2 = parseInt( numeros[1] );
+                        resultado = num1 + num2;
+                        pantalla.value = resultado;
+                    }
+                }else if(resta>0){
+                    numeros = valorPantalla.split('-');
+                    numeros = numeros.filter(el => el != '');
+                    if(numeros.length ==2) {
+                        let num1 = parseInt( numeros[0] );
+                        let num2 = parseInt( numeros[1] );
+                        resultado = num1 - num2;
+                        pantalla.value = resultado;
+                    }
+                }else if(multi>0){
+                    numeros = valorPantalla.split('x');
+                    numeros = numeros.filter(el => el != '');
+                    if(numeros.length ==2) {
+                        let num1 = parseInt( numeros[0] );
+                        let num2 = parseInt( numeros[1] );
+                        resultado = num1 * num2;
+                        pantalla.value = resultado;
+                    }
+                }else if(div>0){
+                    numeros = valorPantalla.split('/');
+                    numeros = numeros.filter(el => el != '');
+                    if(numeros.length ==2) {
+                        let num1 = parseInt( numeros[0] );
+                        let num2 = parseInt( numeros[1] );
+                        resultado = num1 / num2;
+                        pantalla.value = resultado;
+                    }
+                }
+
+            }else{
+                pantalla.value = 'ERROR!';
+            }
+        }
+
+
+
+        function existeOperacion(){
+            let pantalla = document.querySelector('#pantalla');
+            let valorPantalla = pantalla.value;
+
+            suma  = valorPantalla.indexOf('+');
+            resta = valorPantalla.indexOf('-');
+            multi = valorPantalla.indexOf('*');
+            div   = valorPantalla.indexOf('/');
+
+            if(suma > -1 || resta > -1 || multi > -1 || div > -1){
+                return true;
+            }else{
+                return false; 
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

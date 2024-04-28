@@ -1,7 +1,30 @@
+:root {
+  --main-letter-color: #20c997;
+  --main-letter-buttom: #e38528;
+  --main-background-color: #222;
+}
+
+
+.nombre-barra{
+  color: var(--main-letter-color);
+  text-transform: uppercase;
+}
+
+
 #navbar{
-  background-color: #111418!important;
+  background-color: var(--main-background-color);
   height: 100%;
 }
+
+.main{
+  min-height: 100vh;
+}
+
+
+
+
+
+
 
 html, body {  
  margin:0px;  
@@ -184,4 +207,43 @@ transition: all .2s ease;
   #navbar{
     display: none;
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.titulo-about{
+  font-family: "Open Sans", sans-serif;
+  font-weight:700;
+}
+
+.parrafo-about{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(51,51,51);
+  text-align: justify;
+}
+
+.parrafo-about-name{
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(51,51,51);
+  text-align: justify;
+  color: var(--main-letter-color);
+}
+
+#main-box-about-me{
+height: 100vh;
+}
+
+.about-color-name{
+  color: var(--main-letter-color);
+}
+
+
+#main-box-experiencia{
+  height: 100vh;
+  }
+
+#main-box-proyectos-personales{
+  height: 100vh;
 }
