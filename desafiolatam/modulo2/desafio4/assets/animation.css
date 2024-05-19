@@ -1,0 +1,26 @@
+
+.tipo{
+    transition: transform 1s ease;
+    display: inline-block;
+}
+
+.tipo:hover{
+    transform: scale(1.1);
+}
+
+.col{
+    transition: transform 1s ease;
+}
+
+.col:hover{
+    transform: scale(1.1);
+}
+
+.img-footer-1, .img-footer-2{
+    transition: transform 1s ease;
+}
+
+.img-footer-1:hover,.img-footer-2:hover{
+    transform: scale(1.5);
+    fill: goldenrod;
+}
