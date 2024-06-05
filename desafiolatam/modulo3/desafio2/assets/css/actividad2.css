@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50%;
+}
+
+.centrar{
+    display: block;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
