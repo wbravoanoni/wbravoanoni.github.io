@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="offset-2 col-8">
+                <h1 class="pt-5">Todo List</h1>
+                    <input id="nombre_tarea" type="text" class="form-control">
+                    <button id="btn_agregar" class="btn btn-success mt-3">Agregar</button>
+            </div>
+
+            <div class="col-4">
+                <p class="mt-4">Total: <span id="cajaTotal" class="fw-bold">0</span></p>
+                <p class="mt-4">Realizadas: <span id="cajaTotalCompletados" class="fw-bold">0</span></p>
+            </div>
+
+            <div class="col-8">
+                <table class="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="listadoTareas">
+                    </tbody>
+                </table>
+            </div>
+            
+                    
+            </div>
+        </div>
+    </div>
+    
+    
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/todolist.js"></script>
+
+</body>
+</html>
