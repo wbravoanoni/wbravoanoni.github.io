@@ -18,19 +18,19 @@ async function obtenerDatosHistoricos(tipoMoneda,monto,dias){
         const data = await res.json();
 
         let datosHistoricos = data.serie.filter( datos => datos.fecha >= obtenerFecha(dias) );
-        formatoMoneda( datosHistoricos[0].valor * monto.value );
+        formatoMoneda( monto.value / datosHistoricos[0].valor, 'en-US','USD');
 
         fechas = datosHistoricos.map( (datos) => convertirFecha(datos.fecha) );
         valores = datosHistoricos.map( (datos) => datos.valor)
 
         generarGrafico(valores,fechas);
 
-    }else if( tipoMoneda.value === 'UF' ){
-        const res = await fetch("https://mindicador.cl/api/uf");
+    }else if( tipoMoneda.value === 'euro' ){
+        const res = await fetch("https://mindicador.cl/api/euro");
         const data = await res.json();
         
         let datosHistoricos = data.serie.filter( datos => datos.fecha >= obtenerFecha(dias) );
-        formatoMoneda( datosHistoricos[0].valor * monto.value );
+        formatoMoneda( monto.value / datosHistoricos[0].valor ,'de-DE','EUR');
 
         fechas = datosHistoricos.map( (datos) => convertirFecha(datos.fecha));
         valores = datosHistoricos.map( (datos) => datos.valor)
@@ -38,6 +38,7 @@ async function obtenerDatosHistoricos(tipoMoneda,monto,dias){
         generarGrafico(valores,fechas);
 
     }else{
+        //formatoMoneda(number,'es-CL','clp')
         alert("Moneda no valida")
     }
 
@@ -53,14 +54,16 @@ function obtenerFecha(dias){
     return tenDaysAgo.toISOString();;
 }
 
-function formatoMoneda(number) {
+
+
+function formatoMoneda(number,formatoNumero,estiloMoneda) {
     const resultado = document.querySelector('#resultado');
     const roundedNumber = (number * 10) / 10;
-    const formattedNumber = new Intl.NumberFormat('es-CL', {
+    const formattedNumber = new Intl.NumberFormat(formatoNumero, {
         style: 'currency',
-        currency: 'CLP',
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
+        currency: estiloMoneda,
+        minimumFractionDigits: 5,
+        maximumFractionDigits: 5
     }).format(roundedNumber);
     resultado.innerHTML = formattedNumber;
 }
