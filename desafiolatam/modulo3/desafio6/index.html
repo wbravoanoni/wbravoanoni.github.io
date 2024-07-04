@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Conversor de monedas</title>
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	
+	<body class="">
+		<div class="container">
+			<div class="row">
+				<div class="offset-3 col-6">
+					<h1 class="text-center my-3 py-3 border-top border-bottom">Conversor de monedas Nacional</h1>
+					<div class="card bg-white text-center">
+						<div class="card-header">
+							<h2 class="text-center">Pesos CLP</h2>
+						</div>
+				
+						<div class="card-body mx-5">
+							<input id="input_monto" class="text-center form-control" type="number">
+							<p class="pt-2">Moneda a convertir</p>
+							<select id="tipo_moneda" class="form-control">
+								<option value="dolar">Dolar</option>
+								<option value="UF">UF</option>
+							</select>
+							<input id="btn_buscar" class="btn btn-primary px-5 my-3"type="button" value="Buscar">
+						</div>
+				
+						<div class="card-footer">
+							<p>Resultado: <span id="resultado"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<canvas id="myChart"></canvas>
+			</div>
+		</div>
+
+    <script src="assets/js/bootstrap.bundle.min.js""></script>
+	<script src="assets/js/chart.js"></script>
+	<script src="assets/js/script.js"></script>
+
+
+
+</body>
+</html>
